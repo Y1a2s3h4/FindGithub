@@ -1,0 +1,46 @@
+.input{
+    width: 40% !important;
+    margin: 3rem auto;
+    margin-bottom: 0;
+}
+#button1{
+    width: 40% !important;
+    margin: auto 30% !important;
+}
+
+.card{
+    margin: 3rem 5% !important;
+
+}
+.avatar{
+    width: 80%;
+}
+.c-mr{
+    margin-right: 2rem !important;
+}
+.text-lg{
+    font-size: 1.5rem !important;
+    margin: 1rem;
+}
+span{
+    width: 50%;
+}
+.seprator{
+    border-right: 3px solid black;
+    margin-bottom: .5rem;
+}
+.pl-6{
+    padding-left: 4rem !important;
+}
+.repos-head{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.repositories{
+    margin-left: 1rem !important;
+}
+.btn-block{
+    color: white !important;
+    width: 45% !important;
+
+}

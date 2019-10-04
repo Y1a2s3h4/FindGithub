@@ -98,17 +98,7 @@ function fetch_users_json() {
                 " href="https://api.github.com/repos/${e.owner.login}/${e.name}/{archive_format}{/ref}"><u>Download Zip</u></a></td>
               </tr>
           `;});
-          // document.getElementById(
-          //   "td-data2"
-          // ).innerHTML += `<td><a target="_blank" href="https://${e.owner.login}.github.io/${e.name}/">Visit </a></td>`;
-          // document.getElementById(
-          //   "td-data3"
-          // ).innerHTML += `<td><a target="_blank" href="https://api.github.com/repos/${e.owner.login}/${e.name}/{archive_format}{/ref}">Download Zip</a></td> `;
-          
-                
-        
       }
-
     }
 
     users.send();

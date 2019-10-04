@@ -82,14 +82,15 @@ function fetch_users_json() {
       if (this.status == 200) {
         // console.log(this.responseText);
         let repos = JSON.parse(this.responseText);
-
+        let i=0;
         console.log(repos);
       console.log("repos");
 
         repos.forEach(e => {
+          i+=1;
           document.getElementById("table-data").innerHTML += `
               <tr>
-                <th scope="row">1</th>
+                <th scope="row">${i}</th>
                 <td>${e.name}</td>
                 <td><a target="_blank" class="text-gray text-center
                 " href="https://${e.owner.login}.github.io/${e.name}/"><u>Visit</u></a></td>

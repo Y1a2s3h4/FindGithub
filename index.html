@@ -14,17 +14,22 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <span class="navbar-brand mb-0 h1">FindGithub</span>
+            <span class="navbar-brand mb-0 h1" >FindGithub</span>
         </div>
         
     </nav>   
     <div class="container">
-        <input type="text" class="form-control input" id="username" onkeydown="enterCode(event)"  placeholder="User name"><br><br>
-        <button id="button1" class="btn btn-dark" onclick="fetch_users_json()">Search</button>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control input w-5" id="username" onkeydown="enterCode(event)"  placeholder="User name"><br><br>
+                <div class="input-group-append">
+                    <button id="button1" class="btn btn-dark button1" onclick="fetch_users_json()">Search</button>
+                </div>
+        </div>
+        
 
         <div  id="cols"></div>
 
-        <div id="repositories"></div>
+        <!-- <div id="repositories"></div> -->
 
     </div>
 

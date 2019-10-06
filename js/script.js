@@ -29,12 +29,12 @@ function fetch_users_json() {
         for (const i in users) {
           if (user.value == users[i].login) {
             document.getElementById("cols").innerHTML = `
-                             <div class="card" style="width: 1000px;">
+                             <div class="card" style="width: 850px;">
                 
-                        <div class="row">
+                        <div class="container">
 
-                                <div class=" col-md-6 mt-2 seprator">   
-                                    <img src=${users.avatar_url}  class="img-fluid ml-2 avatar">
+                                <div class="mt-2">   
+                                    <img src=${users.avatar_url}  class="avatar">
                                         <div class="card-body">
                                             <h5 class="card-title" id="heading">${users.name}</h5>
                                             <p class="card-text" id="bio">${users.bio}</p>
@@ -42,10 +42,10 @@ function fetch_users_json() {
                                         </div>
                                 </div>
                                 
-                                <div class="col-md-6 pl-6">
-                                    <span class="d-block  mb-2 text-lg badge badge-dark">Repos: ${users.public_repos}</span>
-                                    <span class="d-block  mb-2 text-lg badge badge-dark">Following: ${users.following}</span>
-                                    <span class="d-block  mb-2 text-lg badge badge-dark">Followers: ${users.followers}</span>
+                                <div class="pl-6">
+                                    <span class="  mb-2 text-lg badge badge-dark">Repos: ${users.public_repos}</span>
+                                    <span class="  mb-2 text-lg badge badge-dark">Following: ${users.following}</span>
+                                    <span class="  mb-2 text-lg badge badge-dark">Followers: ${users.followers}</span>
                                 </div>
                             </div>
                     </div>
@@ -64,10 +64,7 @@ function fetch_users_json() {
               
             </tbody>
           </table>
-         
-         
-
-                
+            
                 `;
 
             //  document.getElementById('img').src = `${users.avatar_url}`;
@@ -95,7 +92,7 @@ function fetch_users_json() {
                 <td><a target="_blank" class="text-gray text-center
                 " href="https://${e.owner.login}.github.io/${e.name}/"><u>Visit</u></a></td>
                 <td><a target="_blank" class="text-gray text-center
-                " href="https://api.github.com/repos/${e.owner.login}/${e.name}/{archive_format}{/ref}"><u>Download Zip</u></a></td>
+                " href="https://github.com/${e.owner.login}/${e.name}/archive/master.zip"><u>Download Zip</u></a></td>
               </tr>
           `;});
       }

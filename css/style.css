@@ -1,56 +1,205 @@
-.input{
-    /* width: 10% !important; */
-    /* margin-bottom: 0; */
+/*.input{
+     width: 10% !important; 
+      margin-bottom: 0; 
+}*/
+.input-group {
+  margin: 5rem 0;
+  margin-left: 20rem;
 }
-.input-group{
-    margin: 5rem 0;
-    margin-left: 20rem;
+.button1 {
+  width: 5rem;
+  height: 2.37rem;
+  margin-right: 40rem;
 }
-.button1{
-width: 5rem;
-height: 2.37rem;
-margin-right: 40rem ;
 
-} 
-
-.card{
-    margin: 3rem 5% !important;
+.card {
+  margin: 3rem 5% !important;
 }
-.avatar{
+.avatar {
+  width: 40%;
+  padding: 1rem 2rem !important;
+}
+
+.text-lg {
+  width: 15rem;
+  font-size: 1.5rem !important;
+  /* margin: 1rem; */
+}
+.navbar-brand {
+  width: 50%;
+  cursor: pointer;
+}
+
+.pl-6 {
+  padding-left: 4rem !important;
+}
+.repos-head {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.repositories {
+  margin-left: 1rem !important;
+}
+.btn-block {
+  color: white !important;
+  width: 45% !important;
+}
+.text-gray {
+  color: rgb(221, 221, 221);
+}
+.text-gray:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .navbar {
+    width: 100% !important;
+  }
+  .input-group {
+    margin-left: 0 !important;
+  }
+  .input,
+  .btn {
+    border-radius: 5px !important;
+  }
+  .button1 {
+    width: 100% !important;
+    margin-right: 0rem !important;
+  }
+  .card {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .avatar {
+    width: 100% !important;
+  }
+  .badge {
+    margin-left: -15% !important;
+    font-size: 1rem !important;
+  }
+  .repos-head {
+    font-size: 1.5rem !important;
+  }
+  .table {
+    font-size: 0.7rem !important;
+  }
+  th,
+  td {
+    padding-right: -2.3rem !important;
+  }
+}
+
+/*Small devices (landscape phones, less than 768px) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .input-group {
+    margin-left: 0rem !important;
+    display: block !important;
+  }
+  .input,
+  .btn {
+    border-radius: 5px !important;
+  }
+  .input {
+    width: 100% !important;
+  }
+  .button1 {
+    width: 100% !important;
+    margin-right: 0rem !important;
+    margin-top: -1.5rem !important;
+  }
+  .card {
+    width: 100% !important;
+    margin-left: 0rem !important;
+  }
+  .avatar {
+    width: 60% !important;
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navabar {
+    width: 100% !important;
+  }
+  .input-group {
+    margin-left: 2.8rem !important;
+    width: 91.5% !important;
+  }
+  .input,
+  .btn {
+    border-radius: 5px !important;
+  }
+  .button1 {
+    width: 100% !important;
+    margin-right: 0rem !important;
+  }
+  .card {
+    margin: 3rem 6% !important;
+    width: 92% !important;
+  }
+  .avatar {
+    width: 50%;
+    padding: 1rem 2rem !important;
+  }
+  .pl-6 {
+    padding-left: 1rem !important;
+  }
+  
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navabar {
+    width: 100% !important;
+  }
+  .input-group {
+    margin-left: 2.8rem !important;
+    width: 91.5% !important;
+  }
+  .input,
+  .btn {
+    border-radius: 5px !important;
+  }
+  .button1 {
+    width: 100% !important;
+    margin-right: 0rem !important;
+  }
+  .card {
+    margin: 3rem 6% !important;
+    width: 92% !important;
+  }
+  .avatar {
+    width: 50%;
+    padding: 1rem 2rem !important;
+  }
+  .pl-6 {
+    padding-left: 1rem !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  .navabar {
+    width: 100% !important;
+  }
+  
+  .input,
+  .btn {
+    border-radius: 5px !important;
+  }
+  .button1 {
+    width: 100% !important;
+  }
+  .card {
+    margin: 3rem 6% !important;
+    width: 92% !important;
+  }
+  .avatar {
     width: 40%;
     padding: 1rem 2rem !important;
-
-}
-
-.text-lg{
-    width: 15rem;
-    font-size: 1.5rem !important;
-    /* margin: 1rem; */
-}
-span{
-    width: 50%;
-    cursor: pointer;
-}
-
-.pl-6{
-    padding-left: 4rem !important;
-}
-.repos-head{
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-.repositories{
-    margin-left: 1rem !important;
-}
-.btn-block{
-    color: white !important;
-    width: 45% !important;
-
-}
-.text-gray{
-    color: rgb(221, 221, 221);
-}
-.text-gray:hover{
-    color: rgb(255, 255, 255);
-
+  }
+  .pl-6 {
+    padding-left: 1rem !important;
+  }
 }

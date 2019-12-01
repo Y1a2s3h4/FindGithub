@@ -22,7 +22,6 @@ function fetch_users_json() {
       // console.log(this.responseText);
       let users = JSON.parse(this.responseText);
 
-      console.log(users);
       for (const i in users) {
         if (user.value == users[i].login) {
           document.getElementById("cols").innerHTML = `
@@ -66,6 +65,9 @@ function fetch_users_json() {
 
           //  document.getElementById('img').src = `${users.avatar_url}`;
         }
+        else{
+          alert("Invalid Username!");
+        }
       }
     }
   };
@@ -75,8 +77,7 @@ function fetch_users_json() {
       // console.log(this.responseText);
       let repos = JSON.parse(this.responseText);
       let i = 0;
-      console.log(repos);
-      console.log("repos");
+     
 
       repos.forEach(e => {
         i += 1;
@@ -103,4 +104,4 @@ const enterCode = event => {
     fetch_users_json();
   }
 };
-enterCode();
+// enterCode(event);

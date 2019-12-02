@@ -84,9 +84,9 @@ function fetch_users_json() {
         document.getElementById("table-data").innerHTML += `
               <tr>
                 <th scope="row">${i}</th>
-                <td><a target="_blank" class="text-gray text-center" href="https://github.com/${e.owner.login}/${e.name}">${e.name}</a></td>
-                <td><a target="_blank" class="text-gray text-center"href="https://${e.owner.login}.github.io/${e.name}/"><u>Visit</u></a></td>
-                <td><a target="_blank" class="text-gray text-center"href="https://github.com/${e.owner.login}/${e.name}/archive/master.zip"><u>Download Zip</u></a></td>
+                <td> <a target="_blank" class="text-gray text-center" href="https://github.com/${e.owner.login}/${e.name}">${e.name}</a> </td>
+                <td> <a target="_blank" class="text-gray text-center"href="https://${e.owner.login}.github.io/${e.name}/"><u>Visit</u></a> </td>
+                <td> <a target="_blank" class="text-gray text-center"href="https://github.com/${e.owner.login}/${e.name}/archive/master.zip"><u>Download Zip</u></a> </td>
               </tr>
           `;
       });

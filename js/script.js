@@ -24,6 +24,8 @@ function fetch_users_json() {
 
       for (const i in users) {
         if (user.value == users[i].login) {
+          let Bio = users.bio;
+          let users_bio  = (Bio == null) ? "" : Bio;
           document.getElementById("cols").innerHTML = `
                              <div class="card" style="width: 850px;">
                 
@@ -33,7 +35,7 @@ function fetch_users_json() {
                                     <img src=${users.avatar_url}  class="avatar">
                                         <div class="card-body">
                                             <h5 class="card-title" id="heading">${users.name}</h5>
-                                            <p class="card-text" id="bio">${users.bio}</p>
+                                            <p class="card-text" id="bio">${users_bio}</p>
                                             <a href="${users.html_url}" target="_blank" class="btn btn-outline-dark">Check Profile</a>
                                         </div>
                                 </div>

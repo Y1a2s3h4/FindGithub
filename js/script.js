@@ -19,13 +19,12 @@ function fetch_users_json() {
 
   users.onload = function() {
     if (this.status == 200) {
-      // console.log(this.responseText);
       let users = JSON.parse(this.responseText);
 
       for (const i in users) {
         if (user.value == users[i].login) {
           let Bio = users.bio;
-          let users_bio  = (Bio == null) ? "" : Bio;
+          let users_bio = Bio == null ? "" : Bio;
           document.getElementById("cols").innerHTML = `
                              <div class="card" style="width: 850px;">
                 
@@ -64,10 +63,7 @@ function fetch_users_json() {
           </table>
             
                 `;
-
-          //  document.getElementById('img').src = `${users.avatar_url}`;
-        }
-        else{
+        } else {
           alert("Invalid Username!");
         }
       }
@@ -76,10 +72,8 @@ function fetch_users_json() {
 
   repos.onload = function() {
     if (this.status == 200) {
-      // console.log(this.responseText);
       let repos = JSON.parse(this.responseText);
       let i = 0;
-     
 
       repos.forEach(e => {
         i += 1;
@@ -106,4 +100,3 @@ const enterCode = event => {
     fetch_users_json();
   }
 };
-

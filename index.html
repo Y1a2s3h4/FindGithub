@@ -8,20 +8,20 @@
       name="description"
       content="FindGithub is a website which fetch's the data directly from Github API. It can find user and shows few information of it e.g. username, number of repositories , followers, etc. It also shows user's repositories."
     />
-    <!-- Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TMWS0DX3Y4"
+    ></script>
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-MK27VSP");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TMWS0DX3Y4");
     </script>
-    <!-- End Google Tag Manager -->
     <title>FindGithub</title>
     <link rel="stylesheet" href="./css/style.css" />
 
